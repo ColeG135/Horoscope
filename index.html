@@ -1,182 +1,70 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<html>
-<body>
-<form action="/action_page.php">
-    Name: <input type="text" name="firstName"><br>
-    <input type="submit" vaue="Submit">
-</form>
-</body>
-</html>
-
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        .dropbtn {
-            background-color: #ACAF50;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            bow-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-        .dropdown-content a:hover {background-color: #ddd;}
-        .dropdown:hover .dropdown-content {display: block;}
-        .dropdown:hover .dropbtn {background-color: #3e8e41}
-    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h2>Choose a Month and Date to figure out horoscope</h2>
-<p></p>
 
-<div class="dropdown">
-    <button class="dropbtn">Month</button>
-    <div class="dropdown-content">
-        <a href="#">January</a>
-        <a href="#">February</a>
-        <a href="#">March</a>
-        <a href="#">April</a>
-        <a href="#">May</a>
-        <a href="#">June</a>
-        <a href="#">July</a>
-        <a href="#">August</a>
-        <a href="#">September</a>
-        <a href="#">October</a>
-        <a href="#">November</a>
-        <a href="#">December</a>
-    </div>
-</div>
 
-<style>
-    .dropbtn {
-        background-color: #2e20ff;
-        color: #f8fff7;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-    }
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        bow-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-    }
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    .dropdown-content a:hover {background-color: #ddd;}
-    .dropdown:hover .dropdown-content {display: block;}
-    .dropdown:hover .dropbtn {background-color: #3e8e41}
-</style>
-</head>
-<body>
-<h2></h2>
-<p></p>
+    <select id="month">
+        <option value="0">January</option>
+        <option value="1">February</option>
+        <option value="2">March</option>
+        <option value="3">April</option>
+        <option value="4">May</option>
+        <option value="5">June</option>
+        <option value="6">July</option>
+        <option value="7">August</option>
+        <option value="8">September</option>
+        <option value="9">October</option>
+        <option value="10">November</option>
+        <option value="11">December</option>
+    </select>
 
-<div class="dropdown">
-    <button class="dropbtn">Date</button>
-    <div class="dropdown-content">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">7</a>
-        <a href="#">8</a>
-        <a href="#">9</a>
-        <a href="#">10</a>
-        <a href="#">11</a>
-        <a href="#">12</a>
-        <a href="#">13</a>
-        <a href="#">14</a>
-        <a href="#">15</a>
-        <a href="#">16</a>
-        <a href="#">17</a>
-        <a href="#">18</a>
-        <a href="#">19</a>
-        <a href="#">20</a>
-        <a href="#">21</a>
-        <a href="#">22</a>
-        <a href="#">23</a>
-        <a href="#">24</a>
-        <a href="#">25</a>
-        <a href="#">26</a>
-        <a href="#">27</a>
-        <a href="#">28</a>
-        <a href="#">29</a>
-        <a href="#">30</a>
-        <a href="#">31</a>
-    </div>
-</div>
 
-<html>
-<head>
-    <style>
-        .button {
-            background-color: #6e000c;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-</html>
-<body>
+    <select id="day">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+    </select>
 
-<h2> </h2>
-<input type="button" class="button" value="Search">
-</body>
-</html>
 
+    <button onclick=""start()">Ready to Go</button>
+
+    <div id="sign"></div>
 
 </body>
 </html>
 
-
-
-
-
-
-
-
-
-
-
-<!--<button>Default Button</button>-->
-<!--<a href="#" class="button">Link Button</a>-->
-<!--<button class="button">Button</button>-->
-
+                  
